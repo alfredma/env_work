@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/mayang/workspace'
+let g:netrw_dirhist_2='/home/mayang/workspace/XiaoQiang/package/iptables'
+let g:netrw_dirhist_3='/home/mayang/workspace/XiaoQiang/build_dir/linux-brcm4709/iptables-1.4.10/extensions'

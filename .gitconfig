@@ -1,0 +1,26 @@
+[user]
+	email = mayang1@xiaomi.com
+	name = mayang
+[remote "review"]
+	url = ssh://mayang1@git.xiaomi.com:29418/XiaoQiang
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	fetch = +refs/notes/review:refs/notes/review
+	push = HEAD:refs/for/master
+[remote "review-preload"]
+	url = ssh://mayang1@git.xiaomi.com:29418/XiaoQiang
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	fetch = +refs/notes/review-preload:refs/notes/review-preload
+	push = HEAD:refs/for/XiaoQiang-Preload
+[diff]
+    #external = /home/mayang/bin/git-bc.sh
+	tool = bc3
+[difftool]
+	prompt = false
+[difftool "bc3"]
+	cmd = /usr/bin/bcompare "$LOCAL" "$REMOTE"
+[pretty]
+	graph = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+[alias]
+	lg = log --pretty=graph --graph --abbrev-commit --
+    lgoneline = log --pretty=graph
+
